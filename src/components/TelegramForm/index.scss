@@ -1,0 +1,60 @@
+.form {
+
+
+  form {
+    gap: 40px;
+    padding-top: 40px;
+  }
+
+  h2 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+
+    &:hover {
+      color: red;
+      transition: 0.4s;
+    }
+  }
+
+  h1 {
+    color: #2B3033;
+    font-family: Gilroy;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    /* 116.667% */
+  }
+
+  input {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #C8CBCC;
+    background: #FFF;
+    outline: none;
+    padding: 8px 20px;
+  }
+
+  label {
+    color: #8F9599;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    /* 137.5% */
+  }
+
+  textarea {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #C8CBCC;
+    background: #FFF;
+    outline: none;
+    padding: 8px 20px;
+  }
+}

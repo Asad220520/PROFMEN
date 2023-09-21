@@ -1,0 +1,119 @@
+#staj {
+  .staj {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #EFF7FC;
+    // background: #11111f;
+    padding: 10px 80px;
+
+    &__title {
+      max-width: 500px;
+      gap: 30px;
+
+      &-z {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        width: 500px;
+        height: 500px;
+        padding: 40px;
+        position: fixed;
+        top: 30%;
+        right: 50%;
+        left: 36%;
+        z-index: 99;
+      }
+
+      h1 {
+        color: #333;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 46px;
+      }
+
+      p {
+        color: #2B3033;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px;
+        padding-top: 30px;
+      }
+
+      button {
+        border-radius: 4px;
+        background: #247FB2;
+        color: #fff;
+        padding: 12px 25px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        margin-top: 30px;
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  #staj {
+    .staj {
+      display: flex;
+      flex-direction: column;
+
+      &__title {
+        &-z {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: #fff;
+          width: 400px;
+          height: 400px;
+          padding: 40px;
+          position: fixed;
+          top: 30%;
+          left: 20%;
+          z-index: 99;
+        }
+      }
+
+      &__img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  #staj {
+    .staj {
+      &__title {
+        &-z {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: #fff;
+          width: 350px;
+          height: 550px;
+          padding: 40px;
+          position: fixed;
+          top: 30%;
+          left: 5%;
+          z-index: 99;
+        }
+      }
+    }
+  }
+}
